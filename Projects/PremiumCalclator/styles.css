@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #d2e5ffc9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background:#031e2b;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 50px;
+    border-radius: 7px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #00e1ff;
+    cursor: pointer;
+    margin: 10px;
+    transition: opacity 10s ease;
+    opacity: 0.5;
+}
+
+.calculator form input:hover{
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    opacity: 1;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    cursor:auto;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+.calculator form input {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.calculator form input:active {
+    transform: scale(0.95);
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.calculator form input:active {
+    animation: clickAnimation 0.3s ease;
+}

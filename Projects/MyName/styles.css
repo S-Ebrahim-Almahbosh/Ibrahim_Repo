@@ -1,0 +1,24 @@
+*{
+    background: #000000;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 15%;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.name {
+    text-align: center;
+}
+
+span {
+    color: aqua;
+    margin-top: 100px;
+}
+
+p {
+    padding: 2px;
+    margin: 15px;
+}
